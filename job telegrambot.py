@@ -22,8 +22,7 @@ def perform_job_search(browser_instance, keyword):
     browser_instance.type("input#text-input-what", keyword)
     
 
-    # Indeed's location input often has id="text-input-where"
-    # browser_instance.type("input#text-input-where", "") # Clear default location if any
+ 
 
     browser_instance.click("button[type='submit']", timeout=5) 
     # delay to wait for search
